@@ -1,0 +1,63 @@
+<!-- Homework Assignment #6 - Giphy API
+     Main Index - html
+     Rhonda Johnson -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Giphy Homework</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+
+    <h1>Funny Animal Gifs</h1>
+    <hr>
+
+    <!-- row containing buttons, input box, submit button, add gifs button -->
+    <div class="row">
+        <div class="col-lg-9 col-md-8 col-sm-12">
+            <!-- Rendered Buttons will get Displayed Here  -->
+            <div id="buttons-view"></div>
+        </div>
+
+        <!-- sidebar: input box, submit button, add gifs button -->
+        <div class="col-lg-2 col-md-3 col-sm-12" id="sidebar">
+            <form id="animal-form">
+                <label for="animal-input">
+                    <strong>Add a Topic Button</strong>
+                </label>
+                <br>
+                <input type="text" id="animal-input">
+
+                <!-- Submit button triggers new animal to be added -->
+                <input id="add-animal" class="btn btn-success" type="submit" value="SUBMIT TOPIC">
+            </form>
+
+            <!-- Button triggers 10 additional gifs to be added to the page-->
+            <button id="add-gifs" class="btn btn-success" data-name="add-more">Add 10 more gifs</button>
+
+            <hr>
+
+        </div>
+    </div>
+
+    <hr>
+    <!-- Animal gifs will Get Displayed Here -->
+    <div id="animals-view" class="row"></div>
+
+</body>
+
+</html>
