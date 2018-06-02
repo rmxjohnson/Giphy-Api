@@ -42,7 +42,7 @@ $(document).ready(function () {
         }
 
         // build query string
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal +
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal +
             "&api_key=q40OP8rMaZa0dBwabk58Odvfyt0pDQXU&limit=" + maxImages + "&offset=" + currentOffset;
 
         // Creating an AJAX call for the specific animal button being clicked
