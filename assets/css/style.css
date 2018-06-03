@@ -9,11 +9,22 @@
     padding: 0;     
     background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtfJuFzjmHwsYIkQRHPm6vRujvijw-bHlikvHGVke_l-4ljrT-5g");
     }
-    
-    h1{
+
+    h1  {
         width: 100%;
         text-align: center;
         background-color: rgb(18, 176, 204);
+    }
+
+    h5 {
+        font-size: 10px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+
+    hr{
+        margin-top: 3px;
+        margin-bottom: 3px;
     }
 
     .row{

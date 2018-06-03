@@ -23,14 +23,11 @@ $(document).ready(function () {
 
         // set the animal name selected by the user
         var animalCheck = $(this).attr("data-name");
-        console.log("animal = " + animalCheck);
-        console.log("offset = " + currentOffset);
 
         //clear the display of animal gifs if user did not click on the add-more button
         if (animalCheck !== "add-more") {
             animalsView.empty();
             currentOffset = 0;
-            console.log("offset should reset = " + currentOffset);
             animal = animalCheck;
         }
         // check to see if an animal button had been clicked
@@ -43,7 +40,8 @@ $(document).ready(function () {
 
         // build query string
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal +
-            "&api_key=q40OP8rMaZa0dBwabk58Odvfyt0pDQXU&limit=" + maxImages + "&offset=" + currentOffset;
+            "&api_key=q40OP8rMaZa0dBwabk58Odvfyt0pDQXU&limit=" + maxImages + "&offset=" + currentOffset
+        //+ "&rating=g&rating=pg";
 
         // Creating an AJAX call for the specific animal button being clicked
         $.ajax({
@@ -52,6 +50,7 @@ $(document).ready(function () {
         }).done(function (response) {
 
             var imageCount;
+            console.log(response);
 
             // determine the number of items returned by the ajax request
             var responseLength = response.data.length;
