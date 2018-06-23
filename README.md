@@ -5,6 +5,9 @@ Readme for Homework Assignment 6
 AJAX & APIs - GifTastic
 Rhonda Johnson
 
+Link to deployed project
+https://rmxjohnson.github.io/Giphy-Api/
+
 Built with:
 HTML5
 CSS3 - styling
