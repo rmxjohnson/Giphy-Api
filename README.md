@@ -24,6 +24,10 @@ Within Assets folder:
 	css folder: style.css -custom style
 	javascript folder :  app.js – logic and DOM manipulation
 	
+## Home Page
+
+![home.png](assets/home.png)	
+	
 Synopsis
 - Page displays an initial set of buttons
 - User can input text that will create new "topic" buttons
